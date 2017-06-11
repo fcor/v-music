@@ -2,6 +2,7 @@
   #app
     img(src='dist/logo.png')
     h1 V-Music
+    h2 Selecciona el pais para ver los artistas mas escuchados en Last.fm
     select(v-model="selectedCountry")
       option(v-for="country in countries" :value="country.value") {{ country.name }}
     spinner(v-show="loading")
@@ -23,6 +24,9 @@ export default {
         { name:'Argentina', value: 'argentina' },
         { name:'Colombia', value: 'colombia' },
         { name:'España', value: 'spain' },
+        { name:'Brasil', value: 'brazil' },
+        { name:'Ecuador', value: 'ecuador' },
+        { name:'Peru', value: 'peru' },
       ],
       selectedCountry: 'argentina',
       loading: true
@@ -76,4 +80,5 @@ li
   margin 0 10px
 
 a
-  color #42b983</style>
+  color #3d4e68
+  text-decoration none</style>
