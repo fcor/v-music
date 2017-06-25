@@ -1,4 +1,4 @@
-# platzimusic
+# V-music
 
 > A Vue.js project
 
